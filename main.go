@@ -47,7 +47,7 @@ func login(c *fiber.Ctx) error {
 	}
 
 	// Throws Unauthorized error
-	if body.Email != "nasuhyc1@gmail.com" || body.Password != "123123" {
+	if body.Email != "nasuhyc@gmail.com" || body.Password != "123123" {
 		c.Status(fiber.StatusUnauthorized).JSON(fiber.Map{
 			"error": "Bad Credentials",
 		})
